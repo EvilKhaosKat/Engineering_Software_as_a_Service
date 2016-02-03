@@ -16,7 +16,15 @@ end
 # For an empty array it should return zero.
 # For an array with just one element, it should return that element.
 def max_2_sum arr
-  # YOUR CODE HERE
+  return 0 if arr.empty?
+  return arr[0] if arr.size == 1
+
+  first_max = arr.max
+  arr.delete_at arr.index first_max
+
+  second_max = arr.max
+
+  first_max + second_max
 end
 
 def sum_to_n? arr, n
