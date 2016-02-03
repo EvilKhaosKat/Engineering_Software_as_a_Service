@@ -35,7 +35,7 @@ def sum_to_n?(arr, n)
   return false if arr.empty?
 
   combinations = arr.combination(2).to_a # for [1, 2, 3] return [[1, 2], [1, 3], [2, 3]]
-  sums = combinations.map { |combination| combination.inject(0, :+) }
+  sums = combinations.map { |combination| combination.reduce(0, :+) }
 
   sums.include? n
 end
