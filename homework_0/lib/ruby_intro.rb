@@ -24,9 +24,13 @@ def max_2_sum arr
 
   second_max = arr.max
 
+
   first_max + second_max
 end
 
+# Define a method sum_to_n?(array, n) that takes an array of integers and an additional integer, n, as arguments
+# and returns true if any two elements in the array of integers sum to n.
+# sum_to_n?([], n) should return false for any value of n, by definition.
 def sum_to_n? arr, n
   # YOUR CODE HERE
 end
