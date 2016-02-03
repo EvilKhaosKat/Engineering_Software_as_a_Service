@@ -2,12 +2,19 @@
 
 # Part 1
 
+# Define a method sum(array) that takes an array of integers as an argument
+# and returns the sum of its elements.
+# For an empty array it should return zero.
 def sum arr
   return 0 if arr.empty?
 
   arr.reduce(:+)
 end
 
+# Define a method max_2_sum(array)
+# which takes an array of integers as an argument and returns the sum of its two largest elements.
+# For an empty array it should return zero.
+# For an array with just one element, it should return that element.
 def max_2_sum arr
   # YOUR CODE HERE
 end
