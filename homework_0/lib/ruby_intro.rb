@@ -45,7 +45,7 @@ end
 # Define a method hello(name) that takes a string representing a name
 # and returns the string "Hello, " concatenated with the name.
 def hello(name)
-  # YOUR CODE HERE
+  "Hello, #{name}"
 end
 
 # Define a method starts_with_consonant?(s) that takes a string
