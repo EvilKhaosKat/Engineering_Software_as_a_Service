@@ -6,9 +6,7 @@
 # and returns the sum of its elements.
 # For an empty array it should return zero.
 def sum(arr)
-  return 0 if arr.empty?
-
-  arr.reduce(:+)
+  arr.reduce(0, :+)
 end
 
 # Define a method max_2_sum(array)
