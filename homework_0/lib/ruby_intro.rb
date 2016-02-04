@@ -67,8 +67,17 @@ end
 # and returns true if the string represents a binary number that is a multiple of 4.
 # NOTE: be sure it returns false if the string is not a valid binary number!
 def binary_multiple_of_4?(s)
-  # YOUR CODE HERE
+  return false if s.empty?
+
+  not_valid_symbol_position = s =~ /[^0,1]/
+  return false unless not_valid_symbol_position.nil?
+
+
+  number = s.to_i(2)
+  (number % 4 == 0) ? true : false
 end
+
+puts binary_multiple_of_4? '101'
 
 # Part 3
 
