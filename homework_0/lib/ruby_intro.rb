@@ -77,8 +77,6 @@ def binary_multiple_of_4?(s)
   (number % 4 == 0) ? true : false
 end
 
-puts binary_multiple_of_4? '101'
-
 # Part 3
 
 # Define a class BookInStock which represents a book with
@@ -95,5 +93,5 @@ puts binary_multiple_of_4? '101'
 # that returns the price of the book formatted with a leading dollar sign and two decimal places,
 # that is, a price of 20 should format as "$20.00" and a price of 33.8 should format as "$33.80".
 class BookInStock
-# YOUR CODE HERE
+
 end
